@@ -4,7 +4,7 @@ new_list = []
 
 def convert_string(string):
     # We cycle through the line to find out the number of repetitions of letters
-    for symbol in string:
+    for symbol in string.lower():
         # If the letter is repeated once, then insert it into the list (
         if string.count(symbol) == 1:
             new_list.append("(")
